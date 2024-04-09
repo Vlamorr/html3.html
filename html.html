@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
+       
+div {
+  border: 3px solid black;
+  padding: 25px 50px 75px 100px;
+  background-color: gray;
+}
+p.solid {border-style: solid;}
+p.groove {border-style: groove;}
+p.dotted {border-style: dotted;}
+        .p1 {
+            background-color: rgba(40, 51, 255, 0.559);
+        }
+
+        .p2 {
+            background-image: linear-gradient(to left, #00804b, white);
+
+
+        }
+
+        .p3 {
+            background: repeating-linear-gradient(-45deg, #d7df99, #3d4dda 10px, #459520 10px, #f0f0f0 20px);
+            background-size: 100% 60px;
+        }
+
+        div {}
+
+        .p4 {
+            background-image: url("8.jpg");
+        }
+
+        .p5 {
+            background-image: url("7.jpg"), url("6.jpg");
+            background-size: cover;
+            background-position: right;
+            background-blend-mode: overlay, overlay;
+        }
+       img {
+      
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+
+
+        .dotted {
+            border-style: dotted;
+        }
+
+        .dashed {
+            border-style: dashed;
+        }
+
+        .solid {
+            border-style: solid;
+        }
+
+        .mix {
+            border-style: dotted dashed solid double;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: darkblue;
+            padding: 60px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(0, 0, 0);
+        }
+        section {
+            display: -webkit-flex;
+            display: flex;
+        }
+        nav {
+           
+            font-size: 40px;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            background: white;
+            padding: 0.7px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 10;
+        }
+        article {
+           
+            -webkit-flex: 3;
+            -ms-flex: 3;
+            flex: 8;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+            color: black;
+        }
+        @media (max-width: 600px) {
+            section {
+                -webkit-flex-direction: column;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <h2>Markovich Vlad pw3</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#1">1.</a></li>
+                <li><a href="#2">2.</a></li>
+                <li><a href="#3 ">3.</a></li>
+
+            </ul>
+        </nav>
+
+        <article>
+            <div>
+                <h1 id="1">Research for and describe the ways to open developers console in Mozilla Firefox and Safari. new standard?</h1>
+                <dt>
+                    <p class="solid">I### Mozilla Firefox:
+1. **Using Keyboard Shortcuts:**
+   - Press Ctrl + Shift + I on Windows or Linux.
+   - Press Cmd + Option + I on macOS.
+
+2. **Using the Menu:**
+   - Click on the three horizontal lines in the top-right corner to open the menu.
+   - Go to "Web Developer" and then select "Web Console."
+
+3. **Right-Click Method:**
+   - Right-click on any element on the webpage.
+   - Select "Inspect Element" from the context menu.
+   - This will open the developer console at the bottom of the browser window.
+                    </p>
+                    <p>
+                    <p>
+                    <p>
+                    
+                    <p class="solid"> ### Safari:
+1. **Using Keyboard Shortcuts:**
+   - Press Option + Command + I to open the developer console.
+
+2. **Using the Menu:**
+   - Open Safari and go to the menu bar.
+   - Click on "Develop" in the menu bar.
+   - Select "Show Web Inspector."
+
+3. **Right-Click Method:**
+   - Right-click on any element on the webpage.
+   - Select "Inspect Element" from the context menu.
+   - This will open the developer console at the bottom of the browser window.
+
+                    </p>
+                </dt>
+            </div>
+<p>
+
+            <div>
+                <h1 id="2"> What way of including internal links into the HTML page you would consider generally
+                    preferable: absolute or relative links? Describe use cases for choosing absolute links and
+                    choosing relative links.</h1>
+                <dt>
+                    <p class="groove"> Use Cases for Choosing Absolute Links:
+1. When linking to external websites or resources located on different domains.
+2. When linking to resources that are hosted on a different server or subdomain within the same website.
+3. When you need to ensure that the link always points to a specific location regardless of the current page's URL.
+</p>
+                    </p>
+
+                    <p class="groove"> Use Cases for Choosing Relative Links:
+1. When linking to pages or resources within the same website or directory structure.
+2. When creating links between different pages or sections of a website that are likely to be moved or reorganized.
+3. When you want to simplify the maintenance of links by avoiding the need to update URLs if the website structure changes.
+ </p>
+ <p>
+ <p> Ultimately, the choice between absolute and relative links depends on the specific requirements of your website and how likely the URLs are to change in the future. It's generally recommended to use relative links for internal navigation within a website for better flexibility and maintainability.
+ </p>
+ 
+                </dt>
+            </div>
+          <p>
+            <div>
+                <h1 id="3"> Research and write about image formats used in web-development. What is the
+                    difference between JPG, GIF and PNG formats? What is WEBP image type? What is SVG? </h1>
+                    <p> Image formats commonly used in web development include JPG, GIF, PNG, WEBP, and SVG. Each format has unique characteristics and is suited for different types of images.
+</p>
+                <dt>
+                    <p class="dotted"> JJPG is a widely used image format for photographs and complex images. It uses lossy compression to reduce file size while maintaining reasonable image quality. JPG is best suited for images with many colors or gradients, such as photographs.
+</p>
+
+                    <p class="dotted">GIF is popular for simple images, animations, and graphics with fewer colors. It supports transparency and animation, making it ideal for logos, icons, and simple animations due to its small file size and support for transparency.
+
+                    </p>
+                    <p class="dotted">PNG is commonly used for logos, illustrations, and images requiring a transparent background.
+
+                    </p>
+                    <p class="dotted">WEBP supports transparency and animation, making it an excellent choice for optimizing website performance.
+
+                    </p>
+                    <p class="dotted">SVG  is a vector-based image format that uses XML to define graphics. SVG images are resolution-independent and can be scaled without losing quality. They are perfect for logos, icons, and illustrations that need to be displayed at various sizes on the web.
+</p>
+                </dt>
+                </div>
+<p>
+                    <dt></dt>
+                    <img src="9.jpg" width="700" height="400">
+                    <p>
+
+
+                   <div> <p class="p1">A ridge border. The effect depends on the border-color value.</p>s
+                    <p class="p2">A ridge border. The effect depends on the border-color value.</p>
+                    <p class="p3">A ridge border. The effect depends on the border-color value.</p>
+                    <p class="p4">A ridge border. The effect depends on the border-color value.</p>
+                 <p class="p5">A ridge border. The effect depends on the border-color value.</p> </div>
+
+
+
+
+
+
+
+
+
+
+        </article>
+    </section>
